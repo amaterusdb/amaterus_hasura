@@ -7,7 +7,7 @@ array_relationships:
       foreign_key_constraint_on:
         column: member_id
         table:
-          name: member_niconico_accounts
+          name: person_niconico_accounts
           schema: public
   - name: niconico_communities
     using:
