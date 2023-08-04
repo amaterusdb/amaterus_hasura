@@ -1,3 +1,4 @@
 - "!include public_member_niconico_accounts.yaml"
+- "!include public_member_niconico_communities.yaml"
 - "!include public_member_youtube_channels.yaml"
 - "!include public_members.yaml"
