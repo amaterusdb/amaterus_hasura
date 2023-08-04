@@ -1,0 +1,3 @@
+table:
+  name: room_youtube_lives
+  schema: public

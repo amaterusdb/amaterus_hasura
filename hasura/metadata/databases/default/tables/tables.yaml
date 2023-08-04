@@ -4,4 +4,5 @@
 - "!include public_person_niconico_communities.yaml"
 - "!include public_person_youtube_channels.yaml"
 - "!include public_persons.yaml"
+- "!include public_room_youtube_lives.yaml"
 - "!include public_rooms.yaml"
