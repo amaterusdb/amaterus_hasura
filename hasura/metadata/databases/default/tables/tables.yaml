@@ -1,3 +1,4 @@
+- "!include public_match_players.yaml"
 - "!include public_matches.yaml"
 - "!include public_person_niconico_accounts.yaml"
 - "!include public_person_niconico_communities.yaml"
