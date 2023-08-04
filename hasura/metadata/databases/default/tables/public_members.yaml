@@ -1,3 +1,25 @@
 table:
   name: members
   schema: public
+array_relationships:
+  - name: niconico_accounts
+    using:
+      foreign_key_constraint_on:
+        column: member_id
+        table:
+          name: member_niconico_accounts
+          schema: public
+  - name: niconico_communities
+    using:
+      foreign_key_constraint_on:
+        column: member_id
+        table:
+          name: member_niconico_communities
+          schema: public
+  - name: youtube_channels
+    using:
+      foreign_key_constraint_on:
+        column: member_id
+        table:
+          name: member_youtube_channels
+          schema: public
