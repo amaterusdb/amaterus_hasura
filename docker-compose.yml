@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: postgres:15
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=password
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      start_period: 10s
+
+  graphql-engine:
+    image: hasura/graphql-engine:v2.31.0.cli-migrations-v3
+    restart: always
+    depends_on:
+      - postgres
+    ports:
+      - 8080:8080
+    volumes:
+      - ./hasura/metadata:/hasura-metadata
+      - ./hasura/migrations:/hasura-migrations
+    environment:
+      - HASURA_GRAPHQL_DATABASE_URL=postgres://postgres:password@postgres:5432/postgres
+      - HASURA_GRAPHQL_ENABLE_CONSOLE=true
+      - HASURA_GRAPHQL_ADMIN_SECRET=${HASURA_GRAPHQL_ADMIN_SECRET:?}
+
+volumes:
+  postgres_data:
