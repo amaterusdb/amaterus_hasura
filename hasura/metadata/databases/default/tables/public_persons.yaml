@@ -19,7 +19,7 @@ array_relationships:
   - name: youtube_channels
     using:
       foreign_key_constraint_on:
-        column: member_id
+        column: person_id
         table:
           name: person_youtube_channels
           schema: public
