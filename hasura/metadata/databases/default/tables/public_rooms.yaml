@@ -9,3 +9,10 @@ array_relationships:
         table:
           name: matches
           schema: public
+  - name: youtube_lives
+    using:
+      foreign_key_constraint_on:
+        column: room_id
+        table:
+          name: room_youtube_lives
+          schema: public
