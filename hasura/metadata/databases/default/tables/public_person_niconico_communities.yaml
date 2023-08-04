@@ -1,0 +1,3 @@
+table:
+  name: person_niconico_communities
+  schema: public

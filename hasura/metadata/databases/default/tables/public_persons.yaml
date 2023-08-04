@@ -14,7 +14,7 @@ array_relationships:
       foreign_key_constraint_on:
         column: member_id
         table:
-          name: member_niconico_communities
+          name: person_niconico_communities
           schema: public
   - name: youtube_channels
     using:
