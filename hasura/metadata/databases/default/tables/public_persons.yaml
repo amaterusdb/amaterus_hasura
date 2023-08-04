@@ -1,5 +1,5 @@
 table:
-  name: members
+  name: persons
   schema: public
 array_relationships:
   - name: niconico_accounts
