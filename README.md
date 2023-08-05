@@ -9,4 +9,6 @@ cat work/dump_2023-08-05_00-00-00.000Z.sql | sudo docker compose exec -T postgre
 
 hasura --project "$PWD/hasura" --envfile "$PWD/.env.production" metadata apply
 hasura --project "$PWD/hasura" --envfile "$PWD/.env.production" migrate apply --all-databases
+
+hasura --project "$PWD/hasura" --envfile "$PWD/.env.production" console
 ```
