@@ -5,3 +5,21 @@ object_relationships:
   - name: room
     using:
       foreign_key_constraint_on: room_id
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - tweet_id
+        - twitter_user_id
+        - tweet_image_index
+        - tweet_embed_html
+        - tweet_image_url
+        - twitter_screen_name
+        - created_at
+        - tweet_time
+        - updated_at
+        - id
+        - room_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""

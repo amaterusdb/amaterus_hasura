@@ -5,3 +5,16 @@ object_relationships:
   - name: person
     using:
       foreign_key_constraint_on: person_id
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - niconico_account_id
+        - name
+        - created_at
+        - updated_at
+        - id
+        - person_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""

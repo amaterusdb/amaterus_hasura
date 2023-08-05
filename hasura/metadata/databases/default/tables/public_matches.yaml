@@ -6,10 +6,25 @@ object_relationships:
     using:
       foreign_key_constraint_on: room_id
 array_relationships:
-  - name: players
+  - name: match_players
     using:
       foreign_key_constraint_on:
         column: match_id
         table:
           name: match_players
           schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - is_aborted
+        - name
+        - created_at
+        - end_time
+        - start_time
+        - updated_at
+        - id
+        - room_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""

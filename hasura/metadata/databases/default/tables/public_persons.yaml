@@ -9,45 +9,56 @@ array_relationships:
         table:
           name: match_players
           schema: public
-  - name: niconico_accounts
+  - name: person_niconico_accounts
     using:
       foreign_key_constraint_on:
         column: person_id
         table:
           name: person_niconico_accounts
           schema: public
-  - name: niconico_communities
+  - name: person_niconico_communities
     using:
       foreign_key_constraint_on:
         column: person_id
         table:
           name: person_niconico_communities
           schema: public
-  - name: rooms
-    using:
-      foreign_key_constraint_on:
-        column: person_id
-        table:
-          name: room_persons
-          schema: public
-  - name: twitter_accounts
+  - name: person_twitter_accounts
     using:
       foreign_key_constraint_on:
         column: person_id
         table:
           name: person_twitter_accounts
           schema: public
-  - name: youtube_channels
+  - name: person_youtube_channels
     using:
       foreign_key_constraint_on:
         column: person_id
         table:
           name: person_youtube_channels
           schema: public
-  - name: youtube_lives
+  - name: room_persons
+    using:
+      foreign_key_constraint_on:
+        column: person_id
+        table:
+          name: room_persons
+          schema: public
+  - name: room_youtube_lives
     using:
       foreign_key_constraint_on:
         column: person_id
         table:
           name: room_youtube_lives
           schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - name
+        - created_at
+        - updated_at
+        - id
+      filter: {}
+      allow_aggregations: true
+    comment: ""

@@ -9,17 +9,37 @@ array_relationships:
         table:
           name: matches
           schema: public
-  - name: persons
+  - name: room_persons
     using:
       foreign_key_constraint_on:
         column: room_id
         table:
           name: room_persons
           schema: public
-  - name: youtube_lives
+  - name: room_twitter_announcements
+    using:
+      foreign_key_constraint_on:
+        column: room_id
+        table:
+          name: room_twitter_announcements
+          schema: public
+  - name: room_youtube_lives
     using:
       foreign_key_constraint_on:
         column: room_id
         table:
           name: room_youtube_lives
           schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - name
+        - created_at
+        - end_time
+        - start_time
+        - updated_at
+        - id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
