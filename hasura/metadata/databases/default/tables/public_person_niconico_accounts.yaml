@@ -1,3 +1,7 @@
 table:
   name: person_niconico_accounts
   schema: public
+object_relationships:
+  - name: person
+    using:
+      foreign_key_constraint_on: person_id
