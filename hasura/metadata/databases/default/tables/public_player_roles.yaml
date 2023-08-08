@@ -9,6 +9,7 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
+        - color_rgb
         - created_at
         - id
         - is_vanilla
