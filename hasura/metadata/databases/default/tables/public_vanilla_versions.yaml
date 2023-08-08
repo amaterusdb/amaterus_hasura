@@ -1,0 +1,3 @@
+table:
+  name: vanilla_versions
+  schema: public
