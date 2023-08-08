@@ -1,6 +1,35 @@
 table:
   name: mods
   schema: public
+array_relationships:
+  - name: match_mods
+    using:
+      foreign_key_constraint_on:
+        column: mod_id
+        table:
+          name: match_mods
+          schema: public
+  - name: mod_versions
+    using:
+      foreign_key_constraint_on:
+        column: mod_id
+        table:
+          name: mod_versions
+          schema: public
+  - name: player_roles
+    using:
+      foreign_key_constraint_on:
+        column: mod_id
+        table:
+          name: player_roles
+          schema: public
+  - name: room_mods
+    using:
+      foreign_key_constraint_on:
+        column: mod_id
+        table:
+          name: room_mods
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
