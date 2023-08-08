@@ -1,3 +1,4 @@
+- "!include public_maps.yaml"
 - "!include public_match_mods.yaml"
 - "!include public_match_players.yaml"
 - "!include public_matches.yaml"
