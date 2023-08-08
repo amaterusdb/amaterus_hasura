@@ -15,12 +15,13 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - nickname
         - created_at
-        - updated_at
         - id
         - match_id
+        - nickname
         - person_id
+        - result_player_role_id
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
