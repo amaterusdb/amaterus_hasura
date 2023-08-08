@@ -19,6 +19,7 @@ select_permissions:
       columns:
         - color_rgb
         - created_at
+        - document_url
         - id
         - is_vanilla
         - mod_id
