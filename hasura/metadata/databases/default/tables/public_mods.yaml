@@ -2,6 +2,13 @@ table:
   name: mods
   schema: public
 array_relationships:
+  - name: maps
+    using:
+      foreign_key_constraint_on:
+        column: mod_id
+        table:
+          name: maps
+          schema: public
   - name: match_mods
     using:
       foreign_key_constraint_on:
