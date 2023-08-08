@@ -1,0 +1,3 @@
+table:
+  name: mod_versions
+  schema: public
