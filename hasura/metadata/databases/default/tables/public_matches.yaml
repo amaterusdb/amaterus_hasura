@@ -17,14 +17,16 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - is_aborted
-        - name
         - created_at
         - end_time
+        - id
+        - is_aborted
+        - is_vanilla
+        - name
+        - room_id
         - start_time
         - updated_at
-        - id
-        - room_id
+        - vanilla_version
       filter: {}
       allow_aggregations: true
     comment: ""
