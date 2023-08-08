@@ -1,3 +1,17 @@
 table:
   name: mod_versions
   schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - github_url
+        - version
+        - created_at
+        - release_time
+        - updated_at
+        - id
+        - mod_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
