@@ -12,6 +12,7 @@
 - "!include public_person_youtube_channels.yaml"
 - "!include public_persons.yaml"
 - "!include public_player_roles.yaml"
+- "!include public_room_maps.yaml"
 - "!include public_room_mods.yaml"
 - "!include public_room_persons.yaml"
 - "!include public_room_twitter_announcements.yaml"
