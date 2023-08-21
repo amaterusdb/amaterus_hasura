@@ -9,7 +9,6 @@
 - "!include public_amongus_vanilla_versions.yaml"
 - "!include public_communities.yaml"
 - "!include public_games.yaml"
-- "!include public_matches.yaml"
 - "!include public_person_fediverse_accounts.yaml"
 - "!include public_person_niconico_accounts.yaml"
 - "!include public_person_niconico_communities.yaml"
