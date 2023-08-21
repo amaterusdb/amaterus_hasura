@@ -9,7 +9,7 @@ select_permissions:
         - amongus_role_index
         - created_at
         - id
-        - match_id
+        - amongus_match_id
         - person_id
         - updated_at
       filter: {}
