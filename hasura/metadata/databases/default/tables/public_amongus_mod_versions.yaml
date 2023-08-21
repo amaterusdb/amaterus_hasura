@@ -1,5 +1,5 @@
 table:
-  name: mod_versions
+  name: amongus_mod_versions
   schema: public
 object_relationships:
   - name: mod

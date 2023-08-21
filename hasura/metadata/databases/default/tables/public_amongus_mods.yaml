@@ -21,7 +21,7 @@ array_relationships:
       foreign_key_constraint_on:
         column: mod_id
         table:
-          name: mod_versions
+          name: amongus_mod_versions
           schema: public
   - name: player_roles
     using:
