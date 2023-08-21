@@ -1,10 +1,10 @@
 table:
-  name: room_maps
+  name: room_amongus_maps
   schema: public
 object_relationships:
-  - name: map
+  - name: amongus_map
     using:
-      foreign_key_constraint_on: map_id
+      foreign_key_constraint_on: amongus_map_id
   - name: room
     using:
       foreign_key_constraint_on: room_id
@@ -15,7 +15,7 @@ select_permissions:
         - created_at
         - updated_at
         - id
-        - map_id
+        - amongus_map_id
         - room_id
       filter: {}
       allow_aggregations: true

@@ -9,9 +9,9 @@ array_relationships:
   - name: room_maps
     using:
       foreign_key_constraint_on:
-        column: map_id
+        column: amongus_map_id
         table:
-          name: room_maps
+          name: room_amongus_maps
           schema: public
 select_permissions:
   - role: anonymous
