@@ -2,13 +2,6 @@ table:
   name: amongus_vanilla_versions
   schema: public
 array_relationships:
-  - name: matches
-    using:
-      foreign_key_constraint_on:
-        column: vanilla_version_id
-        table:
-          name: matches
-          schema: public
   - name: room_vanilla_versions
     using:
       foreign_key_constraint_on:

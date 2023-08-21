@@ -2,9 +2,6 @@ table:
   name: matches
   schema: public
 object_relationships:
-  - name: map
-    using:
-      foreign_key_constraint_on: map_id
   - name: match_amongus_general
     using:
       foreign_key_constraint_on:
@@ -15,9 +12,6 @@ object_relationships:
   - name: room
     using:
       foreign_key_constraint_on: room_id
-  - name: vanilla_version
-    using:
-      foreign_key_constraint_on: vanilla_version_id
 array_relationships:
   - name: match_mods
     using:
@@ -47,14 +41,10 @@ select_permissions:
         - created_at
         - end_time
         - id
-        - is_aborted
-        - is_vanilla
-        - map_id
         - name
         - room_id
         - start_time
         - updated_at
-        - vanilla_version_id
       filter: {}
       allow_aggregations: true
     comment: ""

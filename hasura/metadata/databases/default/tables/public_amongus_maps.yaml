@@ -6,13 +6,6 @@ object_relationships:
     using:
       foreign_key_constraint_on: mod_id
 array_relationships:
-  - name: matches
-    using:
-      foreign_key_constraint_on:
-        column: map_id
-        table:
-          name: matches
-          schema: public
   - name: room_maps
     using:
       foreign_key_constraint_on:
