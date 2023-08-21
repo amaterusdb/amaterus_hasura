@@ -5,6 +5,13 @@ object_relationships:
   - name: map
     using:
       foreign_key_constraint_on: map_id
+  - name: match_amongus_general
+    using:
+      foreign_key_constraint_on:
+        column: match_id
+        table:
+          name: match_amongus_generals
+          schema: public
   - name: room
     using:
       foreign_key_constraint_on: room_id
