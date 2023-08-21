@@ -11,6 +11,14 @@ object_relationships:
   - name: room
     using:
       foreign_key_constraint_on: room_id
+array_relationships:
+  - name: amongus_match_players
+    using:
+      foreign_key_constraint_on:
+        column: amongus_match_id
+        table:
+          name: amongus_match_players
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
