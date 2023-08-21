@@ -1,5 +1,5 @@
 table:
-  name: player_roles
+  name: amongus_roles
   schema: public
 object_relationships:
   - name: mod
