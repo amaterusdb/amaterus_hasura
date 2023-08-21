@@ -13,13 +13,6 @@ array_relationships:
         table:
           name: match_players
           schema: public
-  - name: match_result_player_roles
-    using:
-      foreign_key_constraint_on:
-        column: match_id
-        table:
-          name: match_result_player_roles
-          schema: public
 select_permissions:
   - role: anonymous
     permission:
