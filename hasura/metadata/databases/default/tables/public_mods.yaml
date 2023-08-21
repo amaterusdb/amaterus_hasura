@@ -7,7 +7,7 @@ array_relationships:
       foreign_key_constraint_on:
         column: mod_id
         table:
-          name: maps
+          name: amongus_maps
           schema: public
   - name: match_mods
     using:

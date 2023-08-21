@@ -1,5 +1,5 @@
 table:
-  name: maps
+  name: amongus_maps
   schema: public
 object_relationships:
   - name: mod

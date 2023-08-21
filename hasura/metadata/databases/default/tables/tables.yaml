@@ -1,5 +1,5 @@
+- "!include public_amongus_maps.yaml"
 - "!include public_communities.yaml"
-- "!include public_maps.yaml"
 - "!include public_match_mods.yaml"
 - "!include public_match_players.yaml"
 - "!include public_match_result_player_roles.yaml"
