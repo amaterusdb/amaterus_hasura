@@ -1,5 +1,6 @@
 - "!include public_amongus_maps.yaml"
 - "!include public_amongus_roles.yaml"
+- "!include public_amongus_vanilla_versions.yaml"
 - "!include public_communities.yaml"
 - "!include public_match_mods.yaml"
 - "!include public_match_players.yaml"
@@ -21,4 +22,3 @@
 - "!include public_room_vanilla_versions.yaml"
 - "!include public_room_youtube_lives.yaml"
 - "!include public_rooms.yaml"
-- "!include public_vanilla_versions.yaml"

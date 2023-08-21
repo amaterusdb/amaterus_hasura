@@ -1,5 +1,5 @@
 table:
-  name: vanilla_versions
+  name: amongus_vanilla_versions
   schema: public
 array_relationships:
   - name: matches
