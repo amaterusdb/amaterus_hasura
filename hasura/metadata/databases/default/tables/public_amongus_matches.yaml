@@ -1,6 +1,16 @@
 table:
   name: amongus_matches
   schema: public
+object_relationships:
+  - name: amongus_map
+    using:
+      foreign_key_constraint_on: amongus_map_id
+  - name: amongus_vanilla_version
+    using:
+      foreign_key_constraint_on: amongus_vanilla_version_id
+  - name: room
+    using:
+      foreign_key_constraint_on: room_id
 select_permissions:
   - role: anonymous
     permission:
