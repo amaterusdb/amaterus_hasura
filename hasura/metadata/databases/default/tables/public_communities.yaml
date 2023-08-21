@@ -1,0 +1,14 @@
+table:
+  name: communities
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - name
+        - created_at
+        - start_time
+        - updated_at
+        - id
+      filter: {}
+    comment: ""
