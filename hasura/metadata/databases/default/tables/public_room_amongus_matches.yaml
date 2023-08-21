@@ -1,0 +1,21 @@
+table:
+  name: room_amongus_matches
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - is_aborted
+        - is_vanilla
+        - index
+        - created_at
+        - end_time
+        - start_time
+        - updated_at
+        - amongus_map_id
+        - amongus_vanilla_version_id
+        - id
+        - room_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
