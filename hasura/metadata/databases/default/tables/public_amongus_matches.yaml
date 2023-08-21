@@ -1,5 +1,5 @@
 table:
-  name: room_amongus_matches
+  name: amongus_matches
   schema: public
 select_permissions:
   - role: anonymous
