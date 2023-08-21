@@ -11,7 +11,7 @@ array_relationships:
       foreign_key_constraint_on:
         column: player_role_id
         table:
-          name: amongus_match_result_players
+          name: amongus_match_player_result_roles
           schema: public
 select_permissions:
   - role: anonymous

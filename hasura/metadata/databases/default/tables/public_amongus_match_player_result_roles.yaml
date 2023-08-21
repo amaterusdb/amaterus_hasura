@@ -1,5 +1,5 @@
 table:
-  name: amongus_match_result_players
+  name: amongus_match_player_result_roles
   schema: public
 select_permissions:
   - role: anonymous

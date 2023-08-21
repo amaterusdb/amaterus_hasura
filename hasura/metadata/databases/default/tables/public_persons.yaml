@@ -14,7 +14,7 @@ array_relationships:
       foreign_key_constraint_on:
         column: person_id
         table:
-          name: amongus_match_result_players
+          name: amongus_match_player_result_roles
           schema: public
   - name: person_fediverse_accounts
     using:
