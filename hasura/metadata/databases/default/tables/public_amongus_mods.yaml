@@ -26,9 +26,9 @@ array_relationships:
   - name: room_mods
     using:
       foreign_key_constraint_on:
-        column: mod_id
+        column: amongus_mod_id
         table:
-          name: room_mods
+          name: room_amongus_mods
           schema: public
 select_permissions:
   - role: anonymous

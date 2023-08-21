@@ -1,13 +1,13 @@
 table:
-  name: room_mods
+  name: room_amongus_mods
   schema: public
 object_relationships:
-  - name: mod
+  - name: amongus_mod
     using:
-      foreign_key_constraint_on: mod_id
-  - name: mod_version
+      foreign_key_constraint_on: amongus_mod_id
+  - name: amongus_mod_version
     using:
-      foreign_key_constraint_on: mod_version_id
+      foreign_key_constraint_on: amongus_mod_version_id
   - name: room
     using:
       foreign_key_constraint_on: room_id
@@ -18,8 +18,8 @@ select_permissions:
         - created_at
         - updated_at
         - id
-        - mod_id
-        - mod_version_id
+        - amongus_mod_id
+        - amongus_mod_version_id
         - room_id
       filter: {}
       allow_aggregations: true
