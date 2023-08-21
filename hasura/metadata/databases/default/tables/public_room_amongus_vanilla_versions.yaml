@@ -1,5 +1,5 @@
 table:
-  name: room_vanilla_versions
+  name: room_amongus_vanilla_versions
   schema: public
 object_relationships:
   - name: room

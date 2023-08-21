@@ -7,5 +7,5 @@ array_relationships:
       foreign_key_constraint_on:
         column: vanilla_version_id
         table:
-          name: room_vanilla_versions
+          name: room_amongus_vanilla_versions
           schema: public

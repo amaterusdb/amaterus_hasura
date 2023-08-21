@@ -49,7 +49,7 @@ array_relationships:
       foreign_key_constraint_on:
         column: room_id
         table:
-          name: room_vanilla_versions
+          name: room_amongus_vanilla_versions
           schema: public
   - name: room_youtube_lives
     using:
