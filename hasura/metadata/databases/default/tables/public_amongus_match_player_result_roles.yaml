@@ -5,14 +5,13 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - player_role_order_index
+        - amongus_role_id
+        - amongus_role_index
         - created_at
-        - updated_at
         - id
         - match_id
         - person_id
-        - player_role_id
-        - player_role_name
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""

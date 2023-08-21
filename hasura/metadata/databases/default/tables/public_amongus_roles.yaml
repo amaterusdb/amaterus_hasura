@@ -9,7 +9,7 @@ array_relationships:
   - name: match_result_player_roles
     using:
       foreign_key_constraint_on:
-        column: player_role_id
+        column: amongus_role_id
         table:
           name: amongus_match_player_result_roles
           schema: public
