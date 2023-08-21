@@ -1,3 +1,16 @@
 table:
   name: amongus_match_mods
   schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - amongus_match_id
+        - amongus_mod_id
+        - amongus_mod_version_id
+        - id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
