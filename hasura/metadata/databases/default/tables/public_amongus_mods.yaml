@@ -1,5 +1,5 @@
 table:
-  name: mods
+  name: amongus_mods
   schema: public
 array_relationships:
   - name: maps
