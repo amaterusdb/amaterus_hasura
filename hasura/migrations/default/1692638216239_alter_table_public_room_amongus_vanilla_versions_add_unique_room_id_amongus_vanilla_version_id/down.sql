@@ -1,0 +1,1 @@
+alter table "public"."room_amongus_vanilla_versions" drop constraint "room_amongus_vanilla_versions_room_id_amongus_vanilla_version_id_key";
