@@ -1,6 +1,14 @@
 table:
   name: communities
   schema: public
+array_relationships:
+  - name: room_communities
+    using:
+      foreign_key_constraint_on:
+        column: community_id
+        table:
+          name: room_communities
+          schema: public
 select_permissions:
   - role: anonymous
     permission:

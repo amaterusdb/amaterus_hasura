@@ -9,6 +9,13 @@ array_relationships:
         table:
           name: matches
           schema: public
+  - name: room_communities
+    using:
+      foreign_key_constraint_on:
+        column: room_id
+        table:
+          name: room_communities
+          schema: public
   - name: room_maps
     using:
       foreign_key_constraint_on:
