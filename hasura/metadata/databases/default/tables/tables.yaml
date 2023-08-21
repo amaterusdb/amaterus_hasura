@@ -1,4 +1,5 @@
 - "!include public_amongus_maps.yaml"
+- "!include public_amongus_match_mods.yaml"
 - "!include public_amongus_matches.yaml"
 - "!include public_amongus_mod_versions.yaml"
 - "!include public_amongus_mods.yaml"
