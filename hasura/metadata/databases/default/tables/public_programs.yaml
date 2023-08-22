@@ -13,6 +13,13 @@ array_relationships:
         table:
           name: program_communities
           schema: public
+  - name: program_twitter_announcements
+    using:
+      foreign_key_constraint_on:
+        column: program_id
+        table:
+          name: program_twitter_announcements
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
