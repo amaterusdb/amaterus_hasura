@@ -2,12 +2,12 @@ table:
   name: projects
   schema: public
 array_relationships:
-  - name: program_communities
+  - name: program_projects
     using:
       foreign_key_constraint_on:
-        column: community_id
+        column: project_id
         table:
-          name: program_communities
+          name: program_projects
           schema: public
 select_permissions:
   - role: anonymous
