@@ -1,0 +1,18 @@
+table:
+  name: youtube_lives
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - remote_youtube_video_id
+        - title
+        - created_at
+        - end_time
+        - start_time
+        - updated_at
+        - id
+        - youtube_channel_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
