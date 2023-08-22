@@ -1,0 +1,16 @@
+table:
+  name: twitter_accounts
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - name
+        - remote_twitter_user_id
+        - twitter_screen_name
+        - created_at
+        - updated_at
+        - id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
