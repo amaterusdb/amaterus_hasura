@@ -1,0 +1,17 @@
+table:
+  name: twitter_tweets
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - remote_tweet_id
+        - tweet_embed_html
+        - created_at
+        - tweet_time
+        - updated_at
+        - id
+        - twitter_account_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
