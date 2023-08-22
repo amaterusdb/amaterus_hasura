@@ -6,7 +6,7 @@ select_permissions:
     permission:
       columns:
         - name
-        - youtube_channel_id
+        - remote_youtube_channel_id
         - created_at
         - updated_at
         - id
