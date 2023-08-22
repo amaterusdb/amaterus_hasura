@@ -1,0 +1,15 @@
+table:
+  name: v2_person_fediverse_accounts
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - fediverse_account_id
+        - id
+        - person_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
