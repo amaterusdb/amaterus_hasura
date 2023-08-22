@@ -1,0 +1,18 @@
+table:
+  name: programs
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - title
+        - created_at
+        - end_time
+        - start_time
+        - updated_at
+        - community_id
+        - game_id
+        - id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
