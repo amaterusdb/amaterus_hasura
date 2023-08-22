@@ -18,6 +18,7 @@
 - "!include public_person_twitter_accounts.yaml"
 - "!include public_person_youtube_channels.yaml"
 - "!include public_persons.yaml"
+- "!include public_program_amongus_maps.yaml"
 - "!include public_program_communities.yaml"
 - "!include public_program_persons.yaml"
 - "!include public_program_twitter_announcements.yaml"

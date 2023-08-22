@@ -1,0 +1,15 @@
+table:
+  name: program_amongus_maps
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - amongus_map_id
+        - id
+        - program_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
