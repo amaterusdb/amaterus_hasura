@@ -1,5 +1,5 @@
 table:
-  name: communities
+  name: projects
   schema: public
 array_relationships:
   - name: program_communities
