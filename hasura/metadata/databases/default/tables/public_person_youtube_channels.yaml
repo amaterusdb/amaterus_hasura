@@ -5,17 +5,18 @@ object_relationships:
   - name: person
     using:
       foreign_key_constraint_on: person_id
+  - name: youtube_channel
+    using:
+      foreign_key_constraint_on: youtube_channel_id
 select_permissions:
   - role: anonymous
     permission:
       columns:
-        - name
-        - youtube_channel_handle
-        - youtube_channel_id
         - created_at
         - updated_at
         - id
         - person_id
+        - youtube_channel_id
       filter: {}
       allow_aggregations: true
     comment: ""

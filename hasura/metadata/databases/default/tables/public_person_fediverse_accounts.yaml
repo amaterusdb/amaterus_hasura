@@ -2,6 +2,9 @@ table:
   name: person_fediverse_accounts
   schema: public
 object_relationships:
+  - name: fediverse_account
+    using:
+      foreign_key_constraint_on: fediverse_account_id
   - name: person
     using:
       foreign_key_constraint_on: person_id
@@ -9,10 +12,9 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - fediverse_acct
-        - name
         - created_at
         - updated_at
+        - fediverse_account_id
         - id
         - person_id
       filter: {}
