@@ -27,6 +27,7 @@
 - "!include public_room_youtube_lives.yaml"
 - "!include public_rooms.yaml"
 - "!include public_twitter_accounts.yaml"
+- "!include public_v2_person_niconico_communities.yaml"
 - "!include public_v2_person_twitter_accounts.yaml"
 - "!include public_v2_person_youtube_channels.yaml"
 - "!include public_youtube_channels.yaml"
