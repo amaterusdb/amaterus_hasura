@@ -37,6 +37,13 @@ array_relationships:
         table:
           name: person_youtube_channels
           schema: public
+  - name: program_persons
+    using:
+      foreign_key_constraint_on:
+        column: person_id
+        table:
+          name: program_persons
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
