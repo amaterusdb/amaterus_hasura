@@ -1,0 +1,15 @@
+table:
+  name: program_youtube_lives
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - id
+        - program_id
+        - youtube_live_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""

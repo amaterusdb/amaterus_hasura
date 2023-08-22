@@ -21,6 +21,7 @@
 - "!include public_program_communities.yaml"
 - "!include public_program_persons.yaml"
 - "!include public_program_twitter_announcements.yaml"
+- "!include public_program_youtube_lives.yaml"
 - "!include public_programs.yaml"
 - "!include public_room_amongus_maps.yaml"
 - "!include public_room_amongus_mods.yaml"
