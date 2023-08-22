@@ -1,0 +1,3 @@
+table:
+  name: niconico_accounts
+  schema: public
