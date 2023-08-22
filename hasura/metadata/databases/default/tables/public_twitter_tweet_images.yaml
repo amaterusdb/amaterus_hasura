@@ -1,0 +1,16 @@
+table:
+  name: twitter_tweet_images
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - index
+        - url
+        - created_at
+        - updated_at
+        - id
+        - tweet_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
