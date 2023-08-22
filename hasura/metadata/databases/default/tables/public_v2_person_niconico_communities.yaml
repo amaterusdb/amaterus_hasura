@@ -1,3 +1,15 @@
 table:
   name: v2_person_niconico_communities
   schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - id
+        - niconico_community_id
+        - person_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
