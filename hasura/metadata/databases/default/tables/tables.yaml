@@ -8,6 +8,7 @@
 - "!include public_amongus_roles.yaml"
 - "!include public_amongus_vanilla_versions.yaml"
 - "!include public_communities.yaml"
+- "!include public_fediverse_accounts.yaml"
 - "!include public_games.yaml"
 - "!include public_niconico_accounts.yaml"
 - "!include public_niconico_communities.yaml"
