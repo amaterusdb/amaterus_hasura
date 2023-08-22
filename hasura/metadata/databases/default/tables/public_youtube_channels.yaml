@@ -13,11 +13,12 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
+        - created_at
+        - id
         - name
         - remote_youtube_channel_id
-        - created_at
         - updated_at
-        - id
+        - youtube_channel_handle
       filter: {}
       allow_aggregations: true
     comment: ""
