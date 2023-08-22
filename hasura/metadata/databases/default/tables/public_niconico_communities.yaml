@@ -1,0 +1,15 @@
+table:
+  name: niconico_communities
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - name
+        - remote_niconico_community_id
+        - created_at
+        - updated_at
+        - id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
