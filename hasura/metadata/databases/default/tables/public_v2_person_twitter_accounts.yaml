@@ -1,6 +1,13 @@
 table:
   name: v2_person_twitter_accounts
   schema: public
+object_relationships:
+  - name: person
+    using:
+      foreign_key_constraint_on: person_id
+  - name: twitter_account
+    using:
+      foreign_key_constraint_on: twitter_account_id
 select_permissions:
   - role: anonymous
     permission:
