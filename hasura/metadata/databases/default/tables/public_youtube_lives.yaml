@@ -5,6 +5,14 @@ object_relationships:
   - name: youtube_channel
     using:
       foreign_key_constraint_on: youtube_channel_id
+array_relationships:
+  - name: program_youtube_lives
+    using:
+      foreign_key_constraint_on:
+        column: youtube_live_id
+        table:
+          name: program_youtube_lives
+          schema: public
 select_permissions:
   - role: anonymous
     permission:

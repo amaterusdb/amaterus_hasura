@@ -2,6 +2,13 @@ table:
   name: youtube_channels
   schema: public
 array_relationships:
+  - name: person_youtube_channels
+    using:
+      foreign_key_constraint_on:
+        column: youtube_channel_id
+        table:
+          name: person_youtube_channels
+          schema: public
   - name: youtube_lives
     using:
       foreign_key_constraint_on:
