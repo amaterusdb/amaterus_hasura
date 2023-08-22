@@ -2,6 +2,9 @@ table:
   name: program_youtube_lives
   schema: public
 object_relationships:
+  - name: person
+    using:
+      foreign_key_constraint_on: person_id
   - name: program
     using:
       foreign_key_constraint_on: program_id
