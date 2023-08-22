@@ -1,13 +1,6 @@
 table:
   name: room_amongus_maps
   schema: public
-object_relationships:
-  - name: amongus_map
-    using:
-      foreign_key_constraint_on: amongus_map_id
-  - name: room
-    using:
-      foreign_key_constraint_on: room_id
 select_permissions:
   - role: anonymous
     permission:

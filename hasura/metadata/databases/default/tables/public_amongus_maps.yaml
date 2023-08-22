@@ -5,14 +5,6 @@ object_relationships:
   - name: mod
     using:
       foreign_key_constraint_on: mod_id
-array_relationships:
-  - name: room_maps
-    using:
-      foreign_key_constraint_on:
-        column: amongus_map_id
-        table:
-          name: room_amongus_maps
-          schema: public
 select_permissions:
   - role: anonymous
     permission:

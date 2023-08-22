@@ -1,11 +1,3 @@
 table:
   name: amongus_vanilla_versions
   schema: public
-array_relationships:
-  - name: room_vanilla_versions
-    using:
-      foreign_key_constraint_on:
-        column: amongus_vanilla_version_id
-        table:
-          name: room_amongus_vanilla_versions
-          schema: public
