@@ -25,3 +25,4 @@
 - "!include public_room_twitter_announcements.yaml"
 - "!include public_room_youtube_lives.yaml"
 - "!include public_rooms.yaml"
+- "!include public_youtube_channels.yaml"
