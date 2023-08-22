@@ -5,12 +5,11 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - name
         - created_at
-        - updated_at
         - id
         - niconico_account_id
         - person_id
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
