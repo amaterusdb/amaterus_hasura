@@ -1,6 +1,13 @@
 table:
   name: program_youtube_lives
   schema: public
+object_relationships:
+  - name: program
+    using:
+      foreign_key_constraint_on: program_id
+  - name: youtube_live
+    using:
+      foreign_key_constraint_on: youtube_live_id
 select_permissions:
   - role: anonymous
     permission:
