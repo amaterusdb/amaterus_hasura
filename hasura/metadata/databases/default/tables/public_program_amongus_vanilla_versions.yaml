@@ -1,0 +1,15 @@
+table:
+  name: program_amongus_vanilla_versions
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - amongus_vanilla_version_id
+        - id
+        - program_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
