@@ -1,3 +1,16 @@
 table:
   name: program_twitter_announcements
   schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - id
+        - program_id
+        - twitter_tweet_id
+        - twitter_tweet_image_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
