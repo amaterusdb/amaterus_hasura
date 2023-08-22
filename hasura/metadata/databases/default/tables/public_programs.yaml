@@ -6,6 +6,13 @@ object_relationships:
     using:
       foreign_key_constraint_on: game_id
 array_relationships:
+  - name: amongus_matches
+    using:
+      foreign_key_constraint_on:
+        column: program_id
+        table:
+          name: amongus_matches
+          schema: public
   - name: program_amongus_maps
     using:
       foreign_key_constraint_on:

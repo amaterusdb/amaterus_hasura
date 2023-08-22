@@ -2,13 +2,6 @@ table:
   name: rooms
   schema: public
 array_relationships:
-  - name: amongus_matches
-    using:
-      foreign_key_constraint_on:
-        column: room_id
-        table:
-          name: amongus_matches
-          schema: public
   - name: room_communities
     using:
       foreign_key_constraint_on:
