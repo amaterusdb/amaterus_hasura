@@ -1,15 +1,14 @@
 table:
-  name: mariokart8deluxe_courses
+  name: mariokart8deluxe_consoles
   schema: public
 select_permissions:
   - role: anonymous
     permission:
       columns:
-        - console_name
-        - created_at
-        - id
         - name
+        - created_at
         - updated_at
+        - id
       filter: {}
       allow_aggregations: true
     comment: ""
