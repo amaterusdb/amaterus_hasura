@@ -7,6 +7,7 @@ select_permissions:
       columns:
         - console_id
         - created_at
+        - cup_id
         - id
         - name
         - updated_at
