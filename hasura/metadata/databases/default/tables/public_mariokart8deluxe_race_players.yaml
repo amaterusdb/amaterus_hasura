@@ -17,8 +17,6 @@ select_permissions:
         - mariokart8deluxe_race_id
         - nickname
         - person_id
-        - point
-        - rank
         - updated_at
       filter: {}
       allow_aggregations: true
