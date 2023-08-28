@@ -1,6 +1,14 @@
 table:
   name: mariokart8deluxe_battle_rules
   schema: public
+array_relationships:
+  - name: mariokart8deluxe_battle_matches
+    using:
+      foreign_key_constraint_on:
+        column: mariokart8deluxe_battle_rule_id
+        table:
+          name: mariokart8deluxe_battle_matches
+          schema: public
 select_permissions:
   - role: anonymous
     permission:

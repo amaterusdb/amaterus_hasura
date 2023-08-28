@@ -1,6 +1,14 @@
 table:
   name: mariokart8deluxe_consoles
   schema: public
+array_relationships:
+  - name: mariokart8deluxe_courses
+    using:
+      foreign_key_constraint_on:
+        column: mariokart8deluxe_console_id
+        table:
+          name: mariokart8deluxe_courses
+          schema: public
 select_permissions:
   - role: anonymous
     permission:

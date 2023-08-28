@@ -8,6 +8,14 @@ object_relationships:
   - name: mariokart8deluxe_cup
     using:
       foreign_key_constraint_on: mariokart8deluxe_cup_id
+array_relationships:
+  - name: mariokart8deluxe_races
+    using:
+      foreign_key_constraint_on:
+        column: mariokart8deluxe_course_id
+        table:
+          name: mariokart8deluxe_races
+          schema: public
 select_permissions:
   - role: anonymous
     permission:

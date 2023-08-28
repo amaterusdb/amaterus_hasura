@@ -13,6 +13,20 @@ array_relationships:
         table:
           name: amongus_matches
           schema: public
+  - name: mariokart8deluxe_battle_matches
+    using:
+      foreign_key_constraint_on:
+        column: program_id
+        table:
+          name: mariokart8deluxe_battle_matches
+          schema: public
+  - name: mariokart8deluxe_races
+    using:
+      foreign_key_constraint_on:
+        column: program_id
+        table:
+          name: mariokart8deluxe_races
+          schema: public
   - name: program_amongus_maps
     using:
       foreign_key_constraint_on:
