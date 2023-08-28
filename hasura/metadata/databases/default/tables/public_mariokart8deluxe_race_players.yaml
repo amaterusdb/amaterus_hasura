@@ -1,6 +1,13 @@
 table:
   name: mariokart8deluxe_race_players
   schema: public
+object_relationships:
+  - name: mariokart8deluxe_race
+    using:
+      foreign_key_constraint_on: mariokart8deluxe_race_id
+  - name: person
+    using:
+      foreign_key_constraint_on: person_id
 select_permissions:
   - role: anonymous
     permission:

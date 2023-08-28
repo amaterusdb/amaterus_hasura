@@ -11,6 +11,14 @@ object_relationships:
   - name: program
     using:
       foreign_key_constraint_on: program_id
+array_relationships:
+  - name: mariokart8deluxe_battle_match_players
+    using:
+      foreign_key_constraint_on:
+        column: mariokart8deluxe_battle_match_id
+        table:
+          name: mariokart8deluxe_battle_match_players
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
