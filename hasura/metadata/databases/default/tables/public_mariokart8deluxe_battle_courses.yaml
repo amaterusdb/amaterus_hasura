@@ -5,10 +5,11 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - name
         - created_at
-        - updated_at
         - id
+        - index
+        - name
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
