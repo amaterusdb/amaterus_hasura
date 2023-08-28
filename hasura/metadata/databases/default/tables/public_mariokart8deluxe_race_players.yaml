@@ -5,13 +5,13 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - index
-        - nickname
         - created_at
-        - updated_at
         - id
         - mariokart8deluxe_race_id
+        - nickname
         - person_id
+        - rank
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
