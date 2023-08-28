@@ -12,13 +12,14 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - rank
-        - nickname
         - created_at
-        - updated_at
         - id
         - mariokart8deluxe_battle_match_id
+        - nickname
         - person_id
+        - point
+        - rank
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
