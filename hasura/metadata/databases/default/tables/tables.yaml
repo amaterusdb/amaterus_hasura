@@ -10,6 +10,7 @@
 - "!include public_fediverse_accounts.yaml"
 - "!include public_games.yaml"
 - "!include public_mariokart8deluxe_battle_courses.yaml"
+- "!include public_mariokart8deluxe_battle_match_players.yaml"
 - "!include public_mariokart8deluxe_battle_matches.yaml"
 - "!include public_mariokart8deluxe_battle_rules.yaml"
 - "!include public_mariokart8deluxe_consoles.yaml"
