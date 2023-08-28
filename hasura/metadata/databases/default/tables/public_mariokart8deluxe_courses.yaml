@@ -12,10 +12,11 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - mariokart8deluxe_console_id
         - created_at
-        - mariokart8deluxe_cup_id
         - id
+        - in_cup_index
+        - mariokart8deluxe_console_id
+        - mariokart8deluxe_cup_id
         - name
         - updated_at
       filter: {}
