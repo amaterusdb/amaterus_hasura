@@ -1,0 +1,17 @@
+table:
+  name: mariokart8deluxe_race_players
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - index
+        - nickname
+        - created_at
+        - updated_at
+        - id
+        - mariokart8deluxe_race_id
+        - person_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
