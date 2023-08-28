@@ -1,0 +1,15 @@
+table:
+  name: mariokart8deluxe_courses
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - name
+        - created_at
+        - updated_at
+        - id
+        - console_name
+      filter: {}
+      allow_aggregations: true
+    comment: ""
