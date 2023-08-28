@@ -1,0 +1,19 @@
+table:
+  name: mariokart8deluxe_races
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - is_aborted
+        - index
+        - created_at
+        - end_time
+        - start_time
+        - updated_at
+        - id
+        - mariokart8deluxe_course_id
+        - program_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""

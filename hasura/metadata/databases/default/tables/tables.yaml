@@ -12,6 +12,7 @@
 - "!include public_mariokart8deluxe_consoles.yaml"
 - "!include public_mariokart8deluxe_courses.yaml"
 - "!include public_mariokart8deluxe_cups.yaml"
+- "!include public_mariokart8deluxe_races.yaml"
 - "!include public_niconico_accounts.yaml"
 - "!include public_niconico_communities.yaml"
 - "!include public_person_fediverse_accounts.yaml"
