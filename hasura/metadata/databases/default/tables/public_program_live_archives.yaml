@@ -5,14 +5,15 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - end_time
-        - start_time
         - created_at
-        - updated_at
+        - end_time
         - id
         - person_id
         - program_id
+        - start_time
+        - updated_at
         - youtube_live_id
+        - youtube_video_id
       filter: {}
       allow_aggregations: true
     comment: ""
