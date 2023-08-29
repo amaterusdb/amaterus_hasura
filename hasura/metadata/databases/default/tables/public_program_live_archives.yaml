@@ -1,6 +1,19 @@
 table:
   name: program_live_archives
   schema: public
+object_relationships:
+  - name: person
+    using:
+      foreign_key_constraint_on: person_id
+  - name: program
+    using:
+      foreign_key_constraint_on: program_id
+  - name: youtube_live
+    using:
+      foreign_key_constraint_on: youtube_live_id
+  - name: youtube_video
+    using:
+      foreign_key_constraint_on: youtube_video_id
 select_permissions:
   - role: anonymous
     permission:

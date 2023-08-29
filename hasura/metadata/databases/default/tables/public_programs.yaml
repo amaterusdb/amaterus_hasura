@@ -48,6 +48,13 @@ array_relationships:
         table:
           name: program_amongus_vanilla_versions
           schema: public
+  - name: program_live_archives
+    using:
+      foreign_key_constraint_on:
+        column: program_id
+        table:
+          name: program_live_archives
+          schema: public
   - name: program_persons
     using:
       foreign_key_constraint_on:
