@@ -1,0 +1,18 @@
+table:
+  name: youtube_videos
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - is_premiere
+        - remote_youtube_video_id
+        - title
+        - created_at
+        - post_time
+        - updated_at
+        - id
+        - youtube_channel_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
