@@ -33,7 +33,6 @@
 - "!include public_program_persons.yaml"
 - "!include public_program_projects.yaml"
 - "!include public_program_twitter_announcements.yaml"
-- "!include public_program_youtube_lives.yaml"
 - "!include public_programs.yaml"
 - "!include public_projects.yaml"
 - "!include public_twitter_accounts.yaml"
