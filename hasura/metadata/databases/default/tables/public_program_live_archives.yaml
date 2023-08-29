@@ -1,0 +1,18 @@
+table:
+  name: program_live_archives
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - end_time
+        - start_time
+        - created_at
+        - updated_at
+        - id
+        - person_id
+        - program_id
+        - youtube_live_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
