@@ -1,0 +1,21 @@
+table:
+  name: fallguys_custom_rounds
+  schema: public
+object_relationships:
+  - name: person
+    using:
+      foreign_key_constraint_on: person_id
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - in_game_creator_name
+        - name
+        - share_code
+        - created_at
+        - updated_at
+        - id
+        - person_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
