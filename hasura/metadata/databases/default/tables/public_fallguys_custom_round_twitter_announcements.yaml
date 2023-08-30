@@ -1,0 +1,22 @@
+table:
+  name: fallguys_custom_round_twitter_announcements
+  schema: public
+object_relationships:
+  - name: fallguys_custom_round
+    using:
+      foreign_key_constraint_on: fallguys_custom_round_id
+  - name: twitter_tweet
+    using:
+      foreign_key_constraint_on: twitter_tweet_id
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - fallguys_custom_round_id
+        - id
+        - twitter_tweet_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""

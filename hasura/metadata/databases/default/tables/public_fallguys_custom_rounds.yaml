@@ -5,6 +5,14 @@ object_relationships:
   - name: person
     using:
       foreign_key_constraint_on: person_id
+array_relationships:
+  - name: fallguys_custom_round_twitter_announcements
+    using:
+      foreign_key_constraint_on:
+        column: fallguys_custom_round_id
+        table:
+          name: fallguys_custom_round_twitter_announcements
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
