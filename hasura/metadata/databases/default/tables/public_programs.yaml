@@ -13,6 +13,13 @@ array_relationships:
         table:
           name: amongus_matches
           schema: public
+  - name: fallguys_matches
+    using:
+      foreign_key_constraint_on:
+        column: program_id
+        table:
+          name: fallguys_matches
+          schema: public
   - name: mariokart8deluxe_battle_matches
     using:
       foreign_key_constraint_on:
