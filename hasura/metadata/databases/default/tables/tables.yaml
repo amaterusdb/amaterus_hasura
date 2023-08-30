@@ -9,6 +9,7 @@
 - "!include public_amongus_vanilla_versions.yaml"
 - "!include public_fallguys_custom_round_twitter_announcements.yaml"
 - "!include public_fallguys_custom_rounds.yaml"
+- "!include public_fallguys_match_rounds.yaml"
 - "!include public_fallguys_matches.yaml"
 - "!include public_fallguys_rounds.yaml"
 - "!include public_fediverse_accounts.yaml"

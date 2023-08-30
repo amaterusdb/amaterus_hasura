@@ -1,6 +1,14 @@
 table:
   name: fallguys_rounds
   schema: public
+array_relationships:
+  - name: fallguys_match_rounds
+    using:
+      foreign_key_constraint_on:
+        column: fallguys_round_id
+        table:
+          name: fallguys_match_rounds
+          schema: public
 select_permissions:
   - role: anonymous
     permission:

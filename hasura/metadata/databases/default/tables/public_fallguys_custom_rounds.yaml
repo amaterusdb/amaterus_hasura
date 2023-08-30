@@ -13,6 +13,13 @@ array_relationships:
         table:
           name: fallguys_custom_round_twitter_announcements
           schema: public
+  - name: fallguys_match_rounds
+    using:
+      foreign_key_constraint_on:
+        column: fallguys_custom_round_id
+        table:
+          name: fallguys_match_rounds
+          schema: public
 select_permissions:
   - role: anonymous
     permission:

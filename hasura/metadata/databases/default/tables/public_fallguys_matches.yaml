@@ -5,6 +5,14 @@ object_relationships:
   - name: program
     using:
       foreign_key_constraint_on: program_id
+array_relationships:
+  - name: fallguys_match_rounds
+    using:
+      foreign_key_constraint_on:
+        column: fallguys_match_id
+        table:
+          name: fallguys_match_rounds
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
