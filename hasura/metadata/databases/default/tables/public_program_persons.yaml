@@ -13,10 +13,11 @@ select_permissions:
     permission:
       columns:
         - created_at
-        - updated_at
         - id
+        - is_absent
         - person_id
         - program_id
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
