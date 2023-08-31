@@ -13,10 +13,11 @@ select_permissions:
     permission:
       columns:
         - created_at
-        - updated_at
         - fallguys_custom_round_id
         - id
+        - is_agent_tweet
         - twitter_tweet_id
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
