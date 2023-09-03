@@ -1,0 +1,16 @@
+table:
+  name: niconico_channels
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - name
+        - remote_niconico_channel_id
+        - screen_name
+        - created_at
+        - updated_at
+        - id
+      filter: {}
+      allow_aggregations: true
+    comment: ""

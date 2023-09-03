@@ -24,6 +24,7 @@
 - "!include public_mariokart8deluxe_race_players.yaml"
 - "!include public_mariokart8deluxe_races.yaml"
 - "!include public_niconico_accounts.yaml"
+- "!include public_niconico_channels.yaml"
 - "!include public_niconico_communities.yaml"
 - "!include public_person_fediverse_accounts.yaml"
 - "!include public_person_niconico_accounts.yaml"
