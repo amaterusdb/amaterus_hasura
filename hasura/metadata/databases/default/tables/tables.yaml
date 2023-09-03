@@ -44,6 +44,7 @@
 - "!include public_program_projects.yaml"
 - "!include public_program_twitter_announcements.yaml"
 - "!include public_programs.yaml"
+- "!include public_project_niconico_videos.yaml"
 - "!include public_projects.yaml"
 - "!include public_twitter_accounts.yaml"
 - "!include public_twitter_tweet_images.yaml"
