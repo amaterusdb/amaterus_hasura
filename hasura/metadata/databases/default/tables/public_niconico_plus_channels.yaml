@@ -1,6 +1,14 @@
 table:
   name: niconico_plus_channels
   schema: public
+array_relationships:
+  - name: person_niconico_plus_channels
+    using:
+      foreign_key_constraint_on:
+        column: niconico_plus_channel_id
+        table:
+          name: person_niconico_plus_channels
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
