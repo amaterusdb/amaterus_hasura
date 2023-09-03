@@ -27,6 +27,7 @@
 - "!include public_niconico_channels.yaml"
 - "!include public_niconico_communities.yaml"
 - "!include public_niconico_plus_channels.yaml"
+- "!include public_niconico_videos.yaml"
 - "!include public_person_fediverse_accounts.yaml"
 - "!include public_person_niconico_accounts.yaml"
 - "!include public_person_niconico_channels.yaml"
