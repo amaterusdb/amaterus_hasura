@@ -6,15 +6,16 @@ select_permissions:
     permission:
       columns:
         - apple_app_store_url
+        - created_at
         - epic_games_url
         - google_play_store_url
+        - id
         - name
         - nintendo_switch_url
         - playstation_url
         - steam_url
-        - created_at
         - updated_at
-        - id
+        - website_url
       filter: {}
       allow_aggregations: true
     comment: ""
