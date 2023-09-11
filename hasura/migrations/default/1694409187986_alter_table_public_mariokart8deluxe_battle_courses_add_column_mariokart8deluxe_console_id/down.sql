@@ -1,0 +1,4 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- alter table "public"."mariokart8deluxe_battle_courses" add column "mariokart8deluxe_console_id" uuid
+--  null;
