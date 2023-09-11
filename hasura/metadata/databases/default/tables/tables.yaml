@@ -22,6 +22,7 @@
 - "!include public_mariokart8deluxe_courses.yaml"
 - "!include public_mariokart8deluxe_cups.yaml"
 - "!include public_mariokart8deluxe_race_players.yaml"
+- "!include public_mariokart8deluxe_race_rules.yaml"
 - "!include public_mariokart8deluxe_races.yaml"
 - "!include public_niconico_accounts.yaml"
 - "!include public_niconico_channels.yaml"
