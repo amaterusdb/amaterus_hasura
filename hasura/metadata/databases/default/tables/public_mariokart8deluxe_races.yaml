@@ -5,6 +5,9 @@ object_relationships:
   - name: mariokart8deluxe_course
     using:
       foreign_key_constraint_on: mariokart8deluxe_course_id
+  - name: mariokart8deluxe_race_rule
+    using:
+      foreign_key_constraint_on: mariokart8deluxe_race_rule_id
   - name: program
     using:
       foreign_key_constraint_on: program_id
@@ -20,15 +23,16 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - is_aborted
-        - index
         - created_at
         - end_time
+        - id
+        - index
+        - is_aborted
+        - mariokart8deluxe_course_id
+        - mariokart8deluxe_race_rule_id
+        - program_id
         - start_time
         - updated_at
-        - id
-        - mariokart8deluxe_course_id
-        - program_id
       filter: {}
       allow_aggregations: true
     comment: ""
