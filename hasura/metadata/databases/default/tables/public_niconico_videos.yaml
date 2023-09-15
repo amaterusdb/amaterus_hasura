@@ -5,6 +5,21 @@ object_relationships:
   - name: niconico_account
     using:
       foreign_key_constraint_on: niconico_account_id
+array_relationships:
+  - name: program_niconico_videos
+    using:
+      foreign_key_constraint_on:
+        column: niconico_video_id
+        table:
+          name: program_niconico_videos
+          schema: public
+  - name: project_niconico_videos
+    using:
+      foreign_key_constraint_on:
+        column: niconico_video_id
+        table:
+          name: project_niconico_videos
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
