@@ -2,6 +2,9 @@ table:
   name: program_twitter_announcements
   schema: public
 object_relationships:
+  - name: person
+    using:
+      foreign_key_constraint_on: person_id
   - name: program
     using:
       foreign_key_constraint_on: program_id
@@ -16,11 +19,12 @@ select_permissions:
     permission:
       columns:
         - created_at
-        - updated_at
         - id
+        - person_id
         - program_id
         - twitter_tweet_id
         - twitter_tweet_image_id
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
