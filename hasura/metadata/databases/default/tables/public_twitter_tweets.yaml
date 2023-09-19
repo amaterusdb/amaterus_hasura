@@ -1,6 +1,18 @@
 table:
   name: twitter_tweets
   schema: public
+object_relationships:
+  - name: twitter_account
+    using:
+      foreign_key_constraint_on: twitter_account_id
+array_relationships:
+  - name: twitter_tweet_images
+    using:
+      foreign_key_constraint_on:
+        column: twitter_tweet_id
+        table:
+          name: twitter_tweet_images
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
