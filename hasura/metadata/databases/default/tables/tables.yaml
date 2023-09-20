@@ -7,6 +7,7 @@
 - "!include public_amongus_mods.yaml"
 - "!include public_amongus_roles.yaml"
 - "!include public_amongus_vanilla_versions.yaml"
+- "!include public_amongusvr_maps.yaml"
 - "!include public_fallguys_custom_round_twitter_announcements.yaml"
 - "!include public_fallguys_custom_rounds.yaml"
 - "!include public_fallguys_match_rounds.yaml"
