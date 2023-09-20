@@ -13,6 +13,13 @@ array_relationships:
         table:
           name: amongus_matches
           schema: public
+  - name: amongusvr_matches
+    using:
+      foreign_key_constraint_on:
+        column: program_id
+        table:
+          name: amongusvr_matches
+          schema: public
   - name: fallguys_matches
     using:
       foreign_key_constraint_on:
