@@ -1,6 +1,24 @@
 table:
   name: niconico_lives
   schema: public
+object_relationships:
+  - name: niconico_account
+    using:
+      foreign_key_constraint_on: niconico_account_id
+  - name: niconico_channel
+    using:
+      foreign_key_constraint_on: niconico_channel_id
+  - name: niconico_community
+    using:
+      foreign_key_constraint_on: niconico_community_id
+array_relationships:
+  - name: program_live_archives
+    using:
+      foreign_key_constraint_on:
+        column: niconico_live_id
+        table:
+          name: program_live_archives
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
