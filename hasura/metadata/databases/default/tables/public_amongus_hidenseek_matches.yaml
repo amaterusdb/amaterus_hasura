@@ -12,6 +12,13 @@ object_relationships:
     using:
       foreign_key_constraint_on: program_id
 array_relationships:
+  - name: amongus_hidenseek_match_mods
+    using:
+      foreign_key_constraint_on:
+        column: amongus_hidenseek_match_id
+        table:
+          name: amongus_hidenseek_match_mods
+          schema: public
   - name: amongus_hidenseek_match_players
     using:
       foreign_key_constraint_on:
