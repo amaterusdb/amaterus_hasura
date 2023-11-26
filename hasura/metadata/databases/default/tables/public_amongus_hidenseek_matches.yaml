@@ -1,3 +1,31 @@
 table:
   name: amongus_hidenseek_matches
   schema: public
+object_relationships:
+  - name: amongus_map
+    using:
+      foreign_key_constraint_on: amongus_map_id
+  - name: amongus_vanilla_version
+    using:
+      foreign_key_constraint_on: amongus_vanilla_version_id
+  - name: program
+    using:
+      foreign_key_constraint_on: program_id
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - is_aborted
+        - is_vanilla
+        - index
+        - created_at
+        - end_time
+        - start_time
+        - updated_at
+        - amongus_map_id
+        - amongus_vanilla_version_id
+        - id
+        - program_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
