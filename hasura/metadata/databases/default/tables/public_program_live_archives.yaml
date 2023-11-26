@@ -21,6 +21,7 @@ select_permissions:
         - created_at
         - end_time
         - id
+        - niconico_live_id
         - person_id
         - program_id
         - start_time
