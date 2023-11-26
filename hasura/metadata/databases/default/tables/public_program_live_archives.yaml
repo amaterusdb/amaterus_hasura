@@ -2,6 +2,9 @@ table:
   name: program_live_archives
   schema: public
 object_relationships:
+  - name: niconico_live
+    using:
+      foreign_key_constraint_on: niconico_live_id
   - name: person
     using:
       foreign_key_constraint_on: person_id
