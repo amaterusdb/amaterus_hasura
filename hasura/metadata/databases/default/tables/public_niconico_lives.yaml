@@ -5,16 +5,17 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - remote_niconico_content_id
-        - title
         - created_at
         - end_time
-        - start_time
-        - updated_at
         - id
+        - is_official
         - niconico_account_id
         - niconico_channel_id
         - niconico_community_id
+        - remote_niconico_content_id
+        - start_time
+        - title
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
