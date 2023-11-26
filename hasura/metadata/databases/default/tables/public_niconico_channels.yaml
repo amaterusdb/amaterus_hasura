@@ -2,6 +2,13 @@ table:
   name: niconico_channels
   schema: public
 array_relationships:
+  - name: niconico_lives
+    using:
+      foreign_key_constraint_on:
+        column: niconico_channel_id
+        table:
+          name: niconico_lives
+          schema: public
   - name: person_niconico_channels
     using:
       foreign_key_constraint_on:
