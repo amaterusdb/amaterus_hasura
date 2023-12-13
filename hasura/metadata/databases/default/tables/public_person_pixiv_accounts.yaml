@@ -1,3 +1,22 @@
 table:
   name: person_pixiv_accounts
   schema: public
+object_relationships:
+  - name: person
+    using:
+      foreign_key_constraint_on: person_id
+  - name: pixiv_account
+    using:
+      foreign_key_constraint_on: pixiv_account_id
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - id
+        - person_id
+        - pixiv_account_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
