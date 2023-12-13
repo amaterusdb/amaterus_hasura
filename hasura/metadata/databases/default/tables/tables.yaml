@@ -44,6 +44,7 @@
 - "!include public_person_twitter_accounts.yaml"
 - "!include public_person_youtube_channels.yaml"
 - "!include public_persons.yaml"
+- "!include public_pixiv_accounts.yaml"
 - "!include public_program_amongus_maps.yaml"
 - "!include public_program_amongus_mods.yaml"
 - "!include public_program_amongus_vanilla_versions.yaml"

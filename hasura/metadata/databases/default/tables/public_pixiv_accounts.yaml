@@ -1,0 +1,3 @@
+table:
+  name: pixiv_accounts
+  schema: public
