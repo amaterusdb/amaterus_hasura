@@ -1,6 +1,14 @@
 table:
   name: twitch_accounts
   schema: public
+array_relationships:
+  - name: person_twitch_accounts
+    using:
+      foreign_key_constraint_on:
+        column: twitch_account_id
+        table:
+          name: person_twitch_accounts
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
