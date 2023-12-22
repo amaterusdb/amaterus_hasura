@@ -1,0 +1,3 @@
+table:
+  name: twitch_accounts
+  schema: public
