@@ -51,6 +51,13 @@ array_relationships:
         table:
           name: person_pixiv_accounts
           schema: public
+  - name: person_twitch_accounts
+    using:
+      foreign_key_constraint_on:
+        column: person_id
+        table:
+          name: person_twitch_accounts
+          schema: public
   - name: person_twitter_accounts
     using:
       foreign_key_constraint_on:
