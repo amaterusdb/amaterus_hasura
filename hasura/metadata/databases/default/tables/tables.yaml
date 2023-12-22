@@ -42,6 +42,7 @@
 - "!include public_person_niconico_communities.yaml"
 - "!include public_person_niconico_plus_channels.yaml"
 - "!include public_person_pixiv_accounts.yaml"
+- "!include public_person_twitch_accounts.yaml"
 - "!include public_person_twitter_accounts.yaml"
 - "!include public_person_youtube_channels.yaml"
 - "!include public_persons.yaml"
