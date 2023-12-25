@@ -1,3 +1,15 @@
 table:
   name: program_game_gift_exchange_parties
   schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - game_gift_exchange_party_id
+        - id
+        - program_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
