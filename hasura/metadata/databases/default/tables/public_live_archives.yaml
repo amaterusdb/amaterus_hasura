@@ -1,3 +1,19 @@
 table:
   name: live_archives
   schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - end_time
+        - start_time
+        - updated_at
+        - id
+        - niconico_live_id
+        - person_id
+        - youtube_live_id
+        - youtube_video_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
