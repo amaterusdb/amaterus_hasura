@@ -20,6 +20,7 @@
 - "!include public_fallguys_rounds.yaml"
 - "!include public_fediverse_accounts.yaml"
 - "!include public_game_exchange_parties.yaml"
+- "!include public_game_exchange_party_exchange.yaml"
 - "!include public_games.yaml"
 - "!include public_mariokart8deluxe_battle_courses.yaml"
 - "!include public_mariokart8deluxe_battle_match_players.yaml"

@@ -1,0 +1,18 @@
+table:
+  name: game_exchange_party_exchange
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - exchange_time
+        - updated_at
+        - from_person_id
+        - game_exchange_party_id
+        - game_id
+        - id
+        - to_person_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
