@@ -1,6 +1,16 @@
 table:
   name: live_archives
   schema: public
+object_relationships:
+  - name: niconico_live
+    using:
+      foreign_key_constraint_on: niconico_live_id
+  - name: youtube_live
+    using:
+      foreign_key_constraint_on: youtube_live_id
+  - name: youtube_video
+    using:
+      foreign_key_constraint_on: youtube_video_id
 select_permissions:
   - role: anonymous
     permission:
