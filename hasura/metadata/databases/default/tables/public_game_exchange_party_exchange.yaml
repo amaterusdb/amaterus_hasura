@@ -1,0 +1,39 @@
+table:
+  name: game_exchange_party_exchange
+  schema: public
+object_relationships:
+  - name: from_person
+    using:
+      foreign_key_constraint_on: from_person_id
+  - name: game
+    using:
+      foreign_key_constraint_on: game_id
+  - name: game_exchange_party
+    using:
+      foreign_key_constraint_on: game_exchange_party_id
+  - name: to_person
+    using:
+      foreign_key_constraint_on: to_person_id
+array_relationships:
+  - name: game_exchange_party_live_archives
+    using:
+      foreign_key_constraint_on:
+        column: game_exchange_party_exchange_id
+        table:
+          name: game_exchange_party_live_archives
+          schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - exchange_time
+        - updated_at
+        - from_person_id
+        - game_exchange_party_id
+        - game_id
+        - id
+        - to_person_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
