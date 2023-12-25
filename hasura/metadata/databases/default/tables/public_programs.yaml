@@ -69,13 +69,6 @@ array_relationships:
         table:
           name: program_amongus_vanilla_versions
           schema: public
-  - name: program_game_gift_exchange_parties
-    using:
-      foreign_key_constraint_on:
-        column: program_id
-        table:
-          name: program_game_gift_exchange_parties
-          schema: public
   - name: program_live_archives
     using:
       foreign_key_constraint_on:

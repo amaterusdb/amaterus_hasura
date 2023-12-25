@@ -1,0 +1,22 @@
+table:
+  name: program_game_exchange_parties
+  schema: public
+object_relationships:
+  - name: game_gift_exchange_party
+    using:
+      foreign_key_constraint_on: game_exchange_party_id
+  - name: program
+    using:
+      foreign_key_constraint_on: program_id
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - created_at
+        - updated_at
+        - game_exchange_party_id
+        - id
+        - program_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
