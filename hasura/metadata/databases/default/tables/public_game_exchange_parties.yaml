@@ -1,6 +1,14 @@
 table:
   name: game_exchange_parties
   schema: public
+array_relationships:
+  - name: program_game_exchange_parties
+    using:
+      foreign_key_constraint_on:
+        column: game_exchange_party_id
+        table:
+          name: program_game_exchange_parties
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
