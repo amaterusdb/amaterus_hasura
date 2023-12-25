@@ -1,6 +1,25 @@
 table:
   name: game_exchange_party_live_archives
   schema: public
+object_relationships:
+  - name: game_exchange_party
+    using:
+      foreign_key_constraint_on: game_exchange_party_id
+  - name: game_exchange_party_exchange
+    using:
+      foreign_key_constraint_on: game_exchange_party_exchange_id
+  - name: niconico_live
+    using:
+      foreign_key_constraint_on: niconico_live_id
+  - name: person
+    using:
+      foreign_key_constraint_on: person_id
+  - name: youtube_live
+    using:
+      foreign_key_constraint_on: youtube_live_id
+  - name: youtube_video
+    using:
+      foreign_key_constraint_on: youtube_video_id
 select_permissions:
   - role: anonymous
     permission:

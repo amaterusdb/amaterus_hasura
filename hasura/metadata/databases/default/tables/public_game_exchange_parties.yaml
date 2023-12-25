@@ -9,6 +9,13 @@ array_relationships:
         table:
           name: game_exchange_party_exchange
           schema: public
+  - name: game_exchange_party_live_archives
+    using:
+      foreign_key_constraint_on:
+        column: game_exchange_party_id
+        table:
+          name: game_exchange_party_live_archives
+          schema: public
   - name: program_game_exchange_parties
     using:
       foreign_key_constraint_on:

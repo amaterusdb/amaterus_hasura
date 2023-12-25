@@ -14,6 +14,14 @@ object_relationships:
   - name: to_person
     using:
       foreign_key_constraint_on: to_person_id
+array_relationships:
+  - name: game_exchange_party_live_archives
+    using:
+      foreign_key_constraint_on:
+        column: game_exchange_party_exchange_id
+        table:
+          name: game_exchange_party_live_archives
+          schema: public
 select_permissions:
   - role: anonymous
     permission:
