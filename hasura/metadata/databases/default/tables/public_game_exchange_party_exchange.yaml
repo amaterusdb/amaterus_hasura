@@ -1,6 +1,19 @@
 table:
   name: game_exchange_party_exchange
   schema: public
+object_relationships:
+  - name: from_person
+    using:
+      foreign_key_constraint_on: from_person_id
+  - name: game
+    using:
+      foreign_key_constraint_on: game_id
+  - name: game_exchange_party
+    using:
+      foreign_key_constraint_on: game_exchange_party_id
+  - name: to_person
+    using:
+      foreign_key_constraint_on: to_person_id
 select_permissions:
   - role: anonymous
     permission:
