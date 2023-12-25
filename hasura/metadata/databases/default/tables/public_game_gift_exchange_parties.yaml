@@ -1,3 +1,15 @@
 table:
   name: game_gift_exchange_parties
   schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - title
+        - created_at
+        - start_time
+        - updated_at
+        - id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
