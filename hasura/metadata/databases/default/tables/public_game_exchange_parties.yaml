@@ -2,6 +2,13 @@ table:
   name: game_exchange_parties
   schema: public
 array_relationships:
+  - name: game_exchange_party_exchanges
+    using:
+      foreign_key_constraint_on:
+        column: game_exchange_party_id
+        table:
+          name: game_exchange_party_exchange
+          schema: public
   - name: program_game_exchange_parties
     using:
       foreign_key_constraint_on:
