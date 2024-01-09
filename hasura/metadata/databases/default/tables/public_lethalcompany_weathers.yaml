@@ -16,6 +16,7 @@ select_permissions:
         - created_at
         - id
         - index
+        - is_labeled
         - name
         - updated_at
       filter: {}
