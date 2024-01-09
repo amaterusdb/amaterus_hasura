@@ -17,7 +17,7 @@ select_permissions:
         - id
         - is_safe
         - name
-        - order
+        - index
         - updated_at
       filter: {}
       allow_aggregations: true
