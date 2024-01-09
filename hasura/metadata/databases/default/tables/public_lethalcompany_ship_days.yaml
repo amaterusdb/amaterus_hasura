@@ -18,10 +18,12 @@ select_permissions:
         - absolute_day_number
         - created_at
         - day_number
+        - end_time
         - id
         - lethalcompany_map_id
         - lethalcompany_ship_id
         - lethalcompany_weather_id
+        - start_time
         - sub_day_number
         - updated_at
       filter: {}
