@@ -25,6 +25,7 @@
 - "!include public_games.yaml"
 - "!include public_lethalcompany_maps.yaml"
 - "!include public_lethalcompany_ships.yaml"
+- "!include public_lethalcompany_weathers.yaml"
 - "!include public_mariokart8deluxe_battle_courses.yaml"
 - "!include public_mariokart8deluxe_battle_match_players.yaml"
 - "!include public_mariokart8deluxe_battle_matches.yaml"
