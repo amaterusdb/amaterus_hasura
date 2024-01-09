@@ -1,3 +1,18 @@
 table:
   name: lethalcompany_ship_days
   schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - day_number
+        - sub_day_number
+        - created_at
+        - updated_at
+        - id
+        - lethalcompany_map_id
+        - lethalcompany_ship_id
+        - lethalcompany_weather_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""

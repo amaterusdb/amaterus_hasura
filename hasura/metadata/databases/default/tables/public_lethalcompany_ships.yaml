@@ -1,3 +1,17 @@
 table:
   name: lethalcompany_ships
   schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - index
+        - created_at
+        - updated_at
+        - end_time
+        - id
+        - program_id
+        - start_time
+      filter: {}
+      allow_aggregations: true
+    comment: ""
