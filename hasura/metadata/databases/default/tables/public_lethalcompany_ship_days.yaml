@@ -15,14 +15,15 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - day_number
-        - sub_day_number
+        - absolute_day_number
         - created_at
-        - updated_at
+        - day_number
         - id
         - lethalcompany_map_id
         - lethalcompany_ship_id
         - lethalcompany_weather_id
+        - sub_day_number
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
