@@ -17,13 +17,13 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - index
         - created_at
-        - updated_at
         - end_time
         - id
+        - index
         - program_id
         - start_time
+        - updated_at
       filter: {}
       allow_aggregations: true
     comment: ""
