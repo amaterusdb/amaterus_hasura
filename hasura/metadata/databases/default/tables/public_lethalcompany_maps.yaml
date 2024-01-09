@@ -13,11 +13,12 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
+        - created_at
+        - id
         - is_safe
         - name
-        - created_at
+        - order
         - updated_at
-        - id
       filter: {}
       allow_aggregations: true
     comment: ""
