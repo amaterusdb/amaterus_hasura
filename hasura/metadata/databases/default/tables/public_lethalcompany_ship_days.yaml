@@ -1,6 +1,16 @@
 table:
   name: lethalcompany_ship_days
   schema: public
+object_relationships:
+  - name: lethalcompany_map
+    using:
+      foreign_key_constraint_on: lethalcompany_map_id
+  - name: lethalcompany_ship
+    using:
+      foreign_key_constraint_on: lethalcompany_ship_id
+  - name: lethalcompany_weather
+    using:
+      foreign_key_constraint_on: lethalcompany_weather_id
 select_permissions:
   - role: anonymous
     permission:

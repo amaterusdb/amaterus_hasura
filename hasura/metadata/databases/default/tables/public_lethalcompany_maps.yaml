@@ -1,6 +1,14 @@
 table:
   name: lethalcompany_maps
   schema: public
+array_relationships:
+  - name: lethalcompany_ship_days
+    using:
+      foreign_key_constraint_on:
+        column: lethalcompany_map_id
+        table:
+          name: lethalcompany_ship_days
+          schema: public
 select_permissions:
   - role: anonymous
     permission:

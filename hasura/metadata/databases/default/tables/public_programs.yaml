@@ -34,6 +34,13 @@ array_relationships:
         table:
           name: fallguys_matches
           schema: public
+  - name: lethalcompany_ships
+    using:
+      foreign_key_constraint_on:
+        column: program_id
+        table:
+          name: lethalcompany_ships
+          schema: public
   - name: mariokart8deluxe_battle_matches
     using:
       foreign_key_constraint_on:
