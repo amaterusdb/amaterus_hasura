@@ -11,7 +11,7 @@ services:
       start_period: 10s
 
   graphql-engine:
-    image: hasura/graphql-engine:v2.36.1.cli-migrations-v3
+    image: hasura/graphql-engine:v2.38.1.cli-migrations-v3
     restart: always
     depends_on:
       - postgres
