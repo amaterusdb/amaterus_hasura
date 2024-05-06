@@ -1,0 +1,26 @@
+table:
+  name: storage__youtube_channel_icons
+  schema: public
+insert_permissions:
+  - role: crawler
+    permission:
+      check: {}
+      columns:
+        - downloaded_at
+        - is_downloaded
+        - object_key
+        - object_sha256_digest
+        - remote_icon_url
+        - remote_youtube_channel_id
+    comment: ""
+update_permissions:
+  - role: crawler
+    permission:
+      columns:
+        - downloaded_at
+        - is_downloaded
+        - object_key
+        - object_sha256_digest
+      filter: {}
+      check: null
+    comment: ""

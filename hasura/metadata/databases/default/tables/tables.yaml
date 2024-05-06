@@ -67,6 +67,7 @@
 - "!include public_programs.yaml"
 - "!include public_project_niconico_videos.yaml"
 - "!include public_projects.yaml"
+- "!include public_storage__youtube_channel_icons.yaml"
 - "!include public_twitch_accounts.yaml"
 - "!include public_twitter_accounts.yaml"
 - "!include public_twitter_tweet_images.yaml"
