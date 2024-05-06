@@ -16,6 +16,17 @@ array_relationships:
         table:
           name: youtube_lives
           schema: public
+insert_permissions:
+  - role: crawler
+    permission:
+      check: {}
+      columns:
+        - auto_updated_at
+        - icon_url
+        - name
+        - remote_youtube_channel_id
+        - youtube_channel_handle
+    comment: ""
 select_permissions:
   - role: anonymous
     permission:
@@ -31,4 +42,29 @@ select_permissions:
         - youtube_channel_handle
       filter: {}
       allow_aggregations: true
+    comment: ""
+  - role: crawler
+    permission:
+      columns:
+        - auto_update_enabled
+        - icon_url
+        - name
+        - remote_youtube_channel_id
+        - youtube_channel_handle
+        - auto_updated_at
+        - created_at
+        - updated_at
+        - id
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: crawler
+    permission:
+      columns:
+        - auto_updated_at
+        - icon_url
+        - name
+        - youtube_channel_handle
+      filter: {}
+      check: {}
     comment: ""
