@@ -21,7 +21,6 @@ insert_permissions:
     permission:
       check: {}
       columns:
-        - auto_updated_at
         - icon_url
         - name
         - remote_youtube_channel_id
@@ -31,8 +30,6 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
-        - auto_update_enabled
-        - auto_updated_at
         - created_at
         - icon_url
         - id
@@ -46,22 +43,19 @@ select_permissions:
   - role: crawler
     permission:
       columns:
-        - auto_update_enabled
+        - created_at
         - icon_url
+        - id
         - name
         - remote_youtube_channel_id
-        - youtube_channel_handle
-        - auto_updated_at
-        - created_at
         - updated_at
-        - id
+        - youtube_channel_handle
       filter: {}
     comment: ""
 update_permissions:
   - role: crawler
     permission:
       columns:
-        - auto_updated_at
         - icon_url
         - name
         - youtube_channel_handle
