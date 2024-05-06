@@ -21,6 +21,7 @@ select_permissions:
     permission:
       columns:
         - created_at
+        - icon_url
         - id
         - name
         - remote_youtube_channel_id
