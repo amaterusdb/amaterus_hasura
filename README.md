@@ -8,6 +8,10 @@
 hasura --project "$PWD/hasura" --envfile "$PWD/.env" console --endpoint "http://localhost:8080"
 ```
 
+`http://localhost:9695`にアクセスして、Webコンソールを開きます。
+
+リモート環境で実行した場合、TCPポート番号`9693`と`9695`をポートフォワーディングしてください。
+
 ### バックアップ＆リストア
 
 ```shell
