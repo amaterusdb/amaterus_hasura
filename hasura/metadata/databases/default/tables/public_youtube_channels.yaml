@@ -9,6 +9,16 @@ object_relationships:
         table:
           name: crawler__youtube_channel_update_runner__youtube_channels
           schema: public
+  - name: storage__youtube_channel_icon
+    using:
+      manual_configuration:
+        column_mapping:
+          icon_url: remote_icon_url
+          remote_youtube_channel_id: remote_youtube_channel_id
+        insertion_order: null
+        remote_table:
+          name: storage__youtube_channel_icons
+          schema: public
 array_relationships:
   - name: person_youtube_channels
     using:
@@ -16,6 +26,13 @@ array_relationships:
         column: youtube_channel_id
         table:
           name: person_youtube_channels
+          schema: public
+  - name: storage__youtube_channel_icons
+    using:
+      foreign_key_constraint_on:
+        column: remote_youtube_channel_id
+        table:
+          name: storage__youtube_channel_icons
           schema: public
   - name: youtube_lives
     using:
