@@ -21,6 +21,7 @@ select_permissions:
     permission:
       columns:
         - auto_update_enabled
+        - auto_updated_at
         - created_at
         - icon_url
         - id
