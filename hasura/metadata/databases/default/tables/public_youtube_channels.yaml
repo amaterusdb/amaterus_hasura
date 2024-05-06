@@ -1,6 +1,14 @@
 table:
   name: youtube_channels
   schema: public
+object_relationships:
+  - name: crawler__youtube_channel_update_runner__youtube_channel
+    using:
+      foreign_key_constraint_on:
+        column: remote_youtube_channel_id
+        table:
+          name: crawler__youtube_channel_update_runner__youtube_channels
+          schema: public
 array_relationships:
   - name: person_youtube_channels
     using:
