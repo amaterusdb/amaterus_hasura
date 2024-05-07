@@ -34,6 +34,13 @@ object_relationships:
           name: storage__youtube_channel_icons
           schema: public
 array_relationships:
+  - name: crawler__youtube_channel_video_update_task__ytch_video_logs
+    using:
+      foreign_key_constraint_on:
+        column: remote_youtube_channel_id
+        table:
+          name: crawler__youtube_channel_video_update_task__ytch_video_logs
+          schema: public
   - name: person_youtube_channels
     using:
       foreign_key_constraint_on:
