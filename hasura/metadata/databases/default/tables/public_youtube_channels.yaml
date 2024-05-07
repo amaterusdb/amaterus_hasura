@@ -2,6 +2,20 @@ table:
   name: youtube_channels
   schema: public
 object_relationships:
+  - name: crawler__youtube_channel_icon_download_task__youtube_channel
+    using:
+      foreign_key_constraint_on:
+        column: remote_youtube_channel_id
+        table:
+          name: crawler__youtube_channel_icon_download_task__youtube_channels
+          schema: public
+  - name: crawler__youtube_channel_update_task__youtube_channel
+    using:
+      foreign_key_constraint_on:
+        column: remote_youtube_channel_id
+        table:
+          name: crawler__youtube_channel_update_task__youtube_channels
+          schema: public
   - name: storage__youtube_channel_icon
     using:
       manual_configuration:
