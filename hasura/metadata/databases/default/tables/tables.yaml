@@ -14,7 +14,6 @@
 - "!include public_amongusvr_match_players.yaml"
 - "!include public_amongusvr_matches.yaml"
 - "!include public_crawler__youtube_channel_config.yaml"
-- "!include public_crawler__youtube_channel_video_update_task__youtube_channels.yaml"
 - "!include public_crawler__youtube_channel_video_update_task__ytch_video_logs.yaml"
 - "!include public_crawler__youtube_channel_video_update_task__ytch_videos.yaml"
 - "!include public_fallguys_custom_round_twitter_announcements.yaml"
