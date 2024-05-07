@@ -1,5 +1,5 @@
 table:
-  name: crawler__youtube_channel_video_update_task__ytch_video_logs
+  name: crawler__youtube_channel_video_logs
   schema: public
 insert_permissions:
   - role: crawler
