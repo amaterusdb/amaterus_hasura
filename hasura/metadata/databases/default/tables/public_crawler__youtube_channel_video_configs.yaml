@@ -8,3 +8,35 @@ object_relationships:
   - name: youtube_video
     using:
       foreign_key_constraint_on: remote_youtube_video_id
+insert_permissions:
+  - role: crawler
+    permission:
+      check: {}
+      columns:
+        - auto_updated_at
+        - remote_youtube_channel_id
+        - remote_youtube_video_id
+    comment: ""
+select_permissions:
+  - role: crawler
+    permission:
+      columns:
+        - auto_update_enabled
+        - comment
+        - remote_youtube_channel_id
+        - remote_youtube_video_id
+        - auto_updated_at
+        - created_at
+        - updated_at
+        - id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
+update_permissions:
+  - role: crawler
+    permission:
+      columns:
+        - auto_updated_at
+      filter: {}
+      check: {}
+    comment: ""
