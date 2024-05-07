@@ -1,0 +1,3 @@
+table:
+  name: crawler__youtube_channel_configs
+  schema: public
