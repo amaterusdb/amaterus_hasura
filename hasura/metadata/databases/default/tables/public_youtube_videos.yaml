@@ -36,6 +36,7 @@ insert_permissions:
         - actual_start_time
         - is_live
         - is_premiere
+        - privacy_status
         - published_at
         - remote_youtube_video_id
         - scheduled_end_time
@@ -66,18 +67,19 @@ select_permissions:
   - role: crawler
     permission:
       columns:
-        - is_live
-        - is_premiere
-        - remote_youtube_video_id
-        - title
         - actual_end_time
         - actual_start_time
         - created_at
+        - id
+        - is_live
+        - is_premiere
+        - privacy_status
         - published_at
+        - remote_youtube_video_id
         - scheduled_end_time
         - scheduled_start_time
+        - title
         - updated_at
-        - id
         - youtube_channel_id
       filter: {}
       allow_aggregations: true
@@ -90,6 +92,7 @@ update_permissions:
         - actual_start_time
         - is_live
         - is_premiere
+        - privacy_status
         - published_at
         - scheduled_end_time
         - scheduled_start_time
