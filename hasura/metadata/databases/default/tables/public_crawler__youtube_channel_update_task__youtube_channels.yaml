@@ -1,5 +1,5 @@
 table:
-  name: crawler__youtube_channel_update_runner__youtube_channels
+  name: crawler__youtube_channel_update_task__youtube_channels
   schema: public
 insert_permissions:
   - role: crawler
