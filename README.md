@@ -7,8 +7,8 @@
 ```shell
 sudo docker compose up -d
 
-hasura --project "$PWD/hasura" --envfile "$PWD/.env" metadata apply
 hasura --project "$PWD/hasura" --envfile "$PWD/.env" migrate apply --all-databases
+hasura --project "$PWD/hasura" --envfile "$PWD/.env" metadata apply
 ```
 
 ### Webコンソールを開く
@@ -34,8 +34,8 @@ cat work/dump_2023-08-05_00-00-00.000Z.sql | sudo docker compose exec -T postgre
 ### マイグレーションとメタデータを本番環境にデプロイ
 
 ```shell
-hasura --project "$PWD/hasura" --envfile "$PWD/.env.production" metadata apply
 hasura --project "$PWD/hasura" --envfile "$PWD/.env.production" migrate apply --all-databases
+hasura --project "$PWD/hasura" --envfile "$PWD/.env.production" metadata apply
 ```
 
 ### 本番環境のWebコンソールを開く
