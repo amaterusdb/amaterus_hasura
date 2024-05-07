@@ -21,7 +21,7 @@ select_permissions:
         - remote_youtube_video_id
         - title
         - created_at
-        - post_time
+        - published_at
         - updated_at
         - id
         - youtube_channel_id
