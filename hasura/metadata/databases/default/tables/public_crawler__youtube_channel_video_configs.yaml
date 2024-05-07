@@ -14,6 +14,7 @@ insert_permissions:
       check: {}
       columns:
         - auto_updated_at
+        - found_at
         - remote_youtube_channel_id
         - remote_youtube_video_id
     comment: ""
@@ -22,13 +23,14 @@ select_permissions:
     permission:
       columns:
         - auto_update_enabled
+        - auto_updated_at
         - comment
+        - created_at
+        - found_at
+        - id
         - remote_youtube_channel_id
         - remote_youtube_video_id
-        - auto_updated_at
-        - created_at
         - updated_at
-        - id
       filter: {}
       allow_aggregations: true
     comment: ""
