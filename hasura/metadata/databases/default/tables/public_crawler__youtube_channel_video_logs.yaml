@@ -1,31 +1,3 @@
 table:
   name: crawler__youtube_channel_video_logs
   schema: public
-insert_permissions:
-  - role: crawler
-    permission:
-      check: {}
-      columns:
-        - fetched_at
-        - has_live_streaming_details
-        - live_broadcast_content
-        - remote_youtube_channel_id
-        - remote_youtube_video_id
-        - upload_status
-    comment: ""
-select_permissions:
-  - role: crawler
-    permission:
-      columns:
-        - has_live_streaming_details
-        - live_broadcast_content
-        - remote_youtube_channel_id
-        - remote_youtube_video_id
-        - upload_status
-        - created_at
-        - fetched_at
-        - updated_at
-        - id
-      filter: {}
-      allow_aggregations: true
-    comment: ""
