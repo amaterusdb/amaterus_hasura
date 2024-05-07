@@ -2,6 +2,15 @@
 
 ## 開発ガイド
 
+### マイグレーションとメタデータを開発環境にデプロイ
+
+```shell
+sudo docker compose up -d
+
+hasura --project "$PWD/hasura" --envfile "$PWD/.env" metadata apply
+hasura --project "$PWD/hasura" --envfile "$PWD/.env" migrate apply --all-databases
+```
+
 ### Webコンソールを開く
 
 ```shell
