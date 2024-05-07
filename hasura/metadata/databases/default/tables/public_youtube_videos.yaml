@@ -13,6 +13,22 @@ array_relationships:
         table:
           name: program_live_archives
           schema: public
+insert_permissions:
+  - role: crawler
+    permission:
+      check: {}
+      columns:
+        - actual_end_time
+        - actual_start_time
+        - is_live
+        - is_premiere
+        - published_at
+        - remote_youtube_video_id
+        - scheduled_end_time
+        - scheduled_start_time
+        - title
+        - youtube_channel_id
+    comment: ""
 select_permissions:
   - role: anonymous
     permission:
@@ -32,4 +48,38 @@ select_permissions:
         - youtube_channel_id
       filter: {}
       allow_aggregations: true
+    comment: ""
+  - role: crawler
+    permission:
+      columns:
+        - is_live
+        - is_premiere
+        - remote_youtube_video_id
+        - title
+        - actual_end_time
+        - actual_start_time
+        - created_at
+        - published_at
+        - scheduled_end_time
+        - scheduled_start_time
+        - updated_at
+        - id
+        - youtube_channel_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""
+update_permissions:
+  - role: crawler
+    permission:
+      columns:
+        - actual_end_time
+        - actual_start_time
+        - is_live
+        - is_premiere
+        - published_at
+        - scheduled_end_time
+        - scheduled_start_time
+        - title
+      filter: {}
+      check: {}
     comment: ""
