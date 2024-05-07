@@ -17,11 +17,16 @@ select_permissions:
   - role: anonymous
     permission:
       columns:
+        - is_live
         - is_premiere
         - remote_youtube_video_id
         - title
+        - actual_end_time
+        - actual_start_time
         - created_at
         - published_at
+        - scheduled_end_time
+        - scheduled_start_time
         - updated_at
         - id
         - youtube_channel_id
