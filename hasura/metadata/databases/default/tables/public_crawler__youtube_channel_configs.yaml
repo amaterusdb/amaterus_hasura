@@ -1,3 +1,7 @@
 table:
   name: crawler__youtube_channel_configs
   schema: public
+object_relationships:
+  - name: youtube_channel
+    using:
+      foreign_key_constraint_on: remote_youtube_channel_id
